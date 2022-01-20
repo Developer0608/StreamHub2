@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import App from "./App";
 import Header from "./component/Header";
 import Signin from "./component/Signin";
