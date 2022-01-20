@@ -1,4 +1,4 @@
-import './Otp.css';
+import { useHistory } from 'react-router-dom';
 
 function Otp() {
   let history = useHistory();

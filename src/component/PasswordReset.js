@@ -1,4 +1,13 @@
-function passwordReset(){
+import { useHistory } from "react-router-dom";
+
+function PasswordReset(){
+  let history = useHistory();
+
+  const onOtpHandler = () => {
+    console.log('Redirecting...');
+    return history.push('/reset-password');
+  }
+  
   return <>
     <div class="login">
       <h1 class="login__title">Reset Password</h1><br></br>
@@ -13,7 +22,9 @@ function passwordReset(){
         <input class="login__group__input" id="confirm-password" type="password" required="true"/>
         <label class="login__group__label">Confirm-Password</label>
       </div>
-      <button class="login__sign-in" type="button" onclick="">Reset Password</button>
+      <button class="login__sign-in" type="button" onCanPlay={onOtpHandler}>Reset Password</button>
     </div>
   </>
 }
+
+export default PasswordReset;

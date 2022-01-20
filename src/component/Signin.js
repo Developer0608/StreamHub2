@@ -40,6 +40,7 @@ function Signin() {
       <div>
         <img className="icon-google" src="https://4.bp.blogspot.com/-Pp8TROoyTwc/VeXXFhKQwWI/AAAAAAAACPo/b2g71CJ_Hj8/s1600/inline-googles-new-logo.png" />
         <div className="login__secondary-cta"><a className="login__secondary-cta__text login__secondary-cta__text--need-help" href="#">Login with Google</a></div>
+        <br></br> 
       </div>
       <div className="login__secondary-cta"><a className="login__secondary-cta__text login__secondary-cta__text--need-help" href="/signup">Sign Up</a></div>
       <br></br>
