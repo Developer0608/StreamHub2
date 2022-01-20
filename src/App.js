@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Login from './component/Signin';
+import Signup from './component/Signup';
 
 function App() {
+
+  let [showSignUp, setShowSignUp] = useState(false);
+
+  const toggleSignup = (e) => {
+    e.preventDefault();
+    console.log('Toggling');
+    setShowSignUp(!showSignUp);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <h4>Home</h4>
+      </>
   );
 }
 
