@@ -43,7 +43,7 @@ function Signin() {
       </div>
       <div className="login__secondary-cta"><a className="login__secondary-cta__text login__secondary-cta__text--need-help" href="/signup">Sign Up</a></div>
       <br></br>
-      <div className="login__secondary-cta"><a className="login__secondary-cta__text login__secondary-cta__text--need-help" href="/login-help">Need help?</a></div>
+      <div className="login__secondary-cta"><a className="login__secondary-cta__text login__secondary-cta__text--need-help" href="/loginhelp">Need help?</a></div>
     </div>
   </>;
 }

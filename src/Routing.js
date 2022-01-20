@@ -2,6 +2,8 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./App";
 import Header from "./component/Header";
+import Otp from "./component/Otp";
+import SetPassword from "./component/Setpassword";
 import Signin from "./component/Signin";
 import Signup from "./component/Signup";
 
@@ -14,6 +16,9 @@ function Routing() {
         <Route exact path="/" render={() => isLoggedIn ? <App /> : <Signin />} />
         <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Signup} />
+        <Route path="/loginhelp" component={SetPassword} />
+        <Route path="/otpvalidate" component={Otp} />
+        <Route path="/reset-password" component={SetPassword}/>
       </Switch>
     </Router>
   )
